@@ -238,8 +238,8 @@
             }
 
             .avatar-circle {
-                width: 120px;
-                height: 120px;
+                width: 125px;
+                height: 125px;
                 border-radius: 50%;
                 background: var(--glass-bg);
                 backdrop-filter: blur(12px);
@@ -251,11 +251,13 @@
                 overflow: hidden;
                 animation: floatAvatar 6s ease-in-out infinite;
                 position: relative;
+                padding: 8px;
             }
 
-            .avatar-circle canvas {
+            .avatar-circle svg {
                 width: 100%;
                 height: 100%;
+                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
             }
 
             /* Online Status Badge */
@@ -554,7 +556,7 @@
             .footer {
                 margin-top: 2.5rem;
                 text-align: center;
-                font-size: 0.82rem;
+                font-size: 0.84rem;
                 color: var(--text-muted);
                 letter-spacing: 0.3px;
             }
@@ -612,8 +614,102 @@
                 <div class="avatar-wrapper">
                     <div class="avatar-glow"></div>
                     <div class="avatar-circle">
-                        <!-- Canvas Lion & Sun (high-res) -->
-                        <canvas id="lionSun" width="240" height="240"></canvas>
+                        <!-- Pure Vector SVG: Lion & Sun (شیر و خورشید) -->
+                        <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFF59D" />
+                                    <stop offset="35%" stop-color="#FFD700" />
+                                    <stop offset="70%" stop-color="#DAA520" />
+                                    <stop offset="100%" stop-color="#B8860B" />
+                                </linearGradient>
+                                <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFF9C4" />
+                                    <stop offset="40%" stop-color="#FFD54F" />
+                                    <stop offset="100%" stop-color="#FFA000" />
+                                </linearGradient>
+                                <linearGradient id="bladeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#F8FAFC" />
+                                    <stop offset="60%" stop-color="#CBD5E1" />
+                                    <stop offset="100%" stop-color="#94A3B8" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Sun Rays (20 radiant beams) -->
+                            <g stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="100" y1="32" x2="100" y2="14" />
+                                <line x1="120" y1="36" x2="128" y2="20" />
+                                <line x1="138" y1="48" x2="152" y2="36" />
+                                <line x1="150" y1="65" x2="168" y2="58" />
+                                <line x1="156" y1="85" x2="176" y2="82" />
+                                <line x1="154" y1="105" x2="174" y2="108" />
+                                <line x1="144" y1="124" x2="162" y2="132" />
+                                <line x1="80" y1="36" x2="72" y2="20" />
+                                <line x1="62" y1="48" x2="48" y2="36" />
+                                <line x1="50" y1="65" x2="32" y2="58" />
+                                <line x1="44" y1="85" x2="24" y2="82" />
+                                <line x1="46" y1="105" x2="26" y2="108" />
+                                <line x1="56" y1="124" x2="38" y2="132" />
+                                <!-- Alternate intermediate rays -->
+                                <line x1="110" y1="33" x2="114" y2="22" stroke-width="1.8" />
+                                <line x1="129" y1="41" x2="139" y2="30" stroke-width="1.8" />
+                                <line x1="145" y1="56" x2="160" y2="48" stroke-width="1.8" />
+                                <line x1="90" y1="33" x2="86" y2="22" stroke-width="1.8" />
+                                <line x1="71" y1="41" x2="61" y2="30" stroke-width="1.8" />
+                                <line x1="55" y1="56" x2="40" y2="48" stroke-width="1.8" />
+                            </g>
+
+                            <!-- Sun Disk -->
+                            <circle cx="100" cy="72" r="32" fill="url(#sunGrad)" stroke="#DAA520" stroke-width="1.5" />
+
+                            <!-- Sun Face Features -->
+                            <g fill="#6D4C41">
+                                <!-- Eyebrows & Eyes -->
+                                <path d="M88 64 Q92 61 96 64" stroke="#6D4C41" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                                <path d="M104 64 Q108 61 112 64" stroke="#6D4C41" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                                <ellipse cx="92" cy="67" rx="2.5" ry="1.8" />
+                                <ellipse cx="108" cy="67" rx="2.5" ry="1.8" />
+                                <!-- Nose -->
+                                <path d="M100 66 L98 74 L102 74 Z" />
+                                <!-- Serene Smile -->
+                                <path d="M93 78 Q100 84 107 78" stroke="#6D4C41" stroke-width="1.6" fill="none" stroke-linecap="round" />
+                            </g>
+
+                            <!-- Persian Lion Body -->
+                            <!-- Mane -->
+                            <path d="M78 88 C70 95 68 115 76 128 C80 135 88 140 100 142 C112 140 120 135 124 128 C132 115 130 95 122 88 C116 82 108 80 100 80 C92 80 84 82 78 88 Z" fill="#B8860B" />
+
+                            <!-- Lion Head -->
+                            <circle cx="100" cy="104" r="18" fill="url(#goldGrad)" />
+                            
+                            <!-- Lion Ears -->
+                            <path d="M84 94 C82 88 88 84 92 89 Z" fill="#DAA520" />
+                            <path d="M116 94 C118 88 112 84 108 89 Z" fill="#DAA520" />
+
+                            <!-- Lion Eyes & Muzzle -->
+                            <circle cx="93" cy="101" r="2.2" fill="#2C1810" />
+                            <circle cx="107" cy="101" r="2.2" fill="#2C1810" />
+                            <ellipse cx="100" cy="107" rx="3" ry="2.2" fill="#2C1810" />
+                            <path d="M96 110 Q100 114 104 110" stroke="#2C1810" stroke-width="1.5" fill="none" stroke-linecap="round" />
+
+                            <!-- Lion Torso / Forelegs -->
+                            <path d="M85 120 Q100 126 115 120 L118 152 Q112 156 106 152 L104 134 L96 134 L94 152 Q88 156 82 152 Z" fill="url(#goldGrad)" stroke="#B8860B" stroke-width="1" />
+
+                            <!-- Imperial Shamshir (Curved Saber) -->
+                            <!-- Curved Blade -->
+                            <path d="M130 90 Q145 120 136 158" stroke="url(#bladeGrad)" stroke-width="3.5" fill="none" stroke-linecap="round" />
+                            <path d="M130 90 Q145 120 136 158" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.8" />
+                            
+                            <!-- Sword Guard (Crossguard) -->
+                            <line x1="124" y1="120" x2="142" y2="120" stroke="#FFD700" stroke-width="3" stroke-linecap="round" />
+                            <!-- Sword Pommel & Grip -->
+                            <circle cx="137" cy="162" r="3.2" fill="#FFD700" />
+                            <line x1="134" y1="148" x2="137" y2="162" stroke="#DAA520" stroke-width="3" stroke-linecap="round" />
+
+                            <!-- Flowing Tail -->
+                            <path d="M78 132 C60 136 54 118 62 108" stroke="url(#goldGrad)" stroke-width="3" fill="none" stroke-linecap="round" />
+                            <circle cx="62" cy="108" r="3.5" fill="#B8860B" />
+                        </svg>
                     </div>
                 </div>
 
@@ -712,7 +808,7 @@
 
             <!-- Footer -->
             <footer class="footer">
-                <p id="footerText">© ۲۰۲۶ مُوری • طراحی شده با ظرافت و زیبایی</p>
+                <p id="footerText">© ۲۰۲۶ مُوری</p>
             </footer>
         </main>
 
@@ -728,7 +824,6 @@
                 fa: {
                     dir: "rtl",
                     lang: "fa",
-                    htmlClass: "rtl-mode",
                     status: "آنلاین و در دسترس",
                     name: "مُوری",
                     bio: "به جهان و فضای شخصی من خوش آمدید ✨",
@@ -739,13 +834,12 @@
                     anonHandle: "ارسال پیام محرمانه و بدون نام",
                     copyBtn: "📋 کپی آیدی تلگرام: @bxiqm",
                     toast: "✨ آیدی تلگرام با موفقیت کپی شد!",
-                    footer: "© ۲۰۲۶ مُوری • طراحی شده با ظرافت و زیبایی",
+                    footer: "© ۲۰۲۶ مُوری",
                     btnLabel: "EN"
                 },
                 en: {
                     dir: "ltr",
                     lang: "en",
-                    htmlClass: "ltr-mode",
                     status: "Online & Available",
                     name: "Mwri",
                     bio: "Welcome to my personal space & creative universe ✨",
@@ -756,7 +850,7 @@
                     anonHandle: "Send a secret message",
                     copyBtn: "📋 Copy Telegram: @bxiqm",
                     toast: "✨ Telegram ID copied to clipboard!",
-                    footer: "© 2026 Mwri • Designed with elegance",
+                    footer: "© 2026 Mwri",
                     btnLabel: "FA"
                 }
             };
@@ -799,139 +893,6 @@
 
             // Initial Language Load
             applyLanguage(currentLang);
-
-            // Retina Canvas Lion and Sun Drawing
-            const canvas = document.getElementById("lionSun");
-            const ctx = canvas.getContext("2d");
-            const dpr = window.devicePixelRatio || 1;
-            
-            canvas.width = 120 * dpr;
-            canvas.height = 120 * dpr;
-            ctx.scale(dpr, dpr);
-
-            const cx = 60, cy = 60;
-
-            function drawLionAndSun() {
-                ctx.clearRect(0, 0, 120, 120);
-
-                // Sun Rays
-                ctx.strokeStyle = "#FFD700";
-                ctx.lineWidth = 2.2;
-                for (let i = 0; i < 16; i++) {
-                    const angle = (i * Math.PI * 2) / 16;
-                    const inner = 23;
-                    const outer = i % 2 === 0 ? 37 : 31;
-                    ctx.beginPath();
-                    ctx.moveTo(cx + Math.cos(angle) * inner, cy + Math.sin(angle) * inner - 8);
-                    ctx.lineTo(cx + Math.cos(angle) * outer, cy + Math.sin(angle) * outer - 8);
-                    ctx.stroke();
-                }
-
-                // Sun Circle
-                ctx.beginPath();
-                ctx.arc(cx, cy - 8, 20, 0, Math.PI * 2);
-                ctx.fillStyle = "#FFD700";
-                ctx.fill();
-                ctx.strokeStyle = "#DAA520";
-                ctx.lineWidth = 1;
-                ctx.stroke();
-
-                // Sun Face - Eyes
-                ctx.fillStyle = "#8B6914";
-                ctx.beginPath();
-                ctx.arc(cx - 6, cy - 11, 2, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.beginPath();
-                ctx.arc(cx + 6, cy - 11, 2, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Sun Face - Smile
-                ctx.beginPath();
-                ctx.arc(cx, cy - 6, 7, 0.1 * Math.PI, 0.9 * Math.PI);
-                ctx.strokeStyle = "#8B6914";
-                ctx.lineWidth = 1.5;
-                ctx.stroke();
-
-                // Lion Body
-                ctx.beginPath();
-                ctx.ellipse(cx, cy + 18, 18, 14, 0, 0, Math.PI * 2);
-                ctx.fillStyle = "#DAA520";
-                ctx.fill();
-
-                // Lion Mane
-                ctx.beginPath();
-                ctx.arc(cx, cy + 2, 16, Math.PI, 2 * Math.PI);
-                ctx.fillStyle = "#B8860B";
-                ctx.fill();
-
-                // Lion Head
-                ctx.beginPath();
-                ctx.arc(cx, cy + 5, 12, 0, Math.PI * 2);
-                ctx.fillStyle = "#DAA520";
-                ctx.fill();
-
-                // Lion Eyes
-                ctx.fillStyle = "#2d1a00";
-                ctx.beginPath();
-                ctx.arc(cx - 4, cy + 3, 1.5, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.beginPath();
-                ctx.arc(cx + 4, cy + 3, 1.5, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Lion Nose
-                ctx.beginPath();
-                ctx.ellipse(cx, cy + 7, 2, 1.5, 0, 0, Math.PI * 2);
-                ctx.fillStyle = "#2d1a00";
-                ctx.fill();
-
-                // Lion Mouth
-                ctx.beginPath();
-                ctx.arc(cx, cy + 9, 4, 0.1 * Math.PI, 0.9 * Math.PI);
-                ctx.strokeStyle = "#2d1a00";
-                ctx.lineWidth = 1;
-                ctx.stroke();
-
-                // Legs
-                ctx.fillStyle = "#DAA520";
-                const legY = cy + 28;
-                [cx - 10, cx - 4, cx + 4, cx + 10].forEach((x) => {
-                    ctx.beginPath();
-                    ctx.roundRect(x - 2.5, legY, 5, 14, 2);
-                    ctx.fill();
-                });
-
-                // Sword Blade
-                ctx.strokeStyle = "#E2E8F0";
-                ctx.lineWidth = 2.5;
-                ctx.beginPath();
-                ctx.moveTo(cx + 22, cy - 10);
-                ctx.lineTo(cx + 22, cy + 35);
-                ctx.stroke();
-
-                // Sword Guard
-                ctx.beginPath();
-                ctx.moveTo(cx + 16, cy + 8);
-                ctx.lineTo(cx + 28, cy + 8);
-                ctx.lineWidth = 2;
-                ctx.stroke();
-
-                // Sword Pommel
-                ctx.beginPath();
-                ctx.arc(cx + 22, cy - 12, 2.5, 0, Math.PI * 2);
-                ctx.fillStyle = "#E2E8F0";
-                ctx.fill();
-
-                // Tail
-                ctx.beginPath();
-                ctx.moveTo(cx - 18, cy + 18);
-                ctx.quadraticCurveTo(cx - 35, cy, cx - 30, cy + 25);
-                ctx.strokeStyle = "#DAA520";
-                ctx.lineWidth = 2.5;
-                ctx.stroke();
-            }
-
-            drawLionAndSun();
 
             // Particles Background Setup
             particlesJS("particles-js", {
