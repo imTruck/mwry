@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
     <head>
         <meta charset="UTF-8" />
-        <title>Mwri | Official Profile</title>
+        <title>Mwri | مُوری</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="description" content="Welcome to Mwri's official link in bio and universe ✨" />
+        <meta name="description" content="پروفایل رسمی و راه‌های ارتباطی مَمَد مُوری ✨" />
         <meta name="theme-color" content="#0f0c29" />
 
         <!-- Open Graph / Meta -->
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mwri | Official Profile" />
-        <meta property="og:description" content="Connect with Mwri across Telegram, Instagram, X, and more ✨" />
+        <meta property="og:title" content="Mwri | مُوری" />
+        <meta property="og:description" content="راه‌های ارتباطی با مُوری در تلگرام، اینستاگرام، ایکس و چت ناشناس ✨" />
         <meta property="og:image" content="/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
         <style>
             :root {
@@ -55,12 +55,20 @@
             html, body {
                 width: 100%;
                 min-height: 100vh;
-                font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
                 background: var(--bg-gradient);
                 color: var(--text-main);
                 transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s ease;
                 overflow-x: hidden;
                 position: relative;
+            }
+
+            /* Font handling */
+            body {
+                font-family: 'Vazirmatn', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            body.ltr-mode {
+                font-family: 'Plus Jakarta Sans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+                direction: ltr;
             }
 
             /* Particles canvas */
@@ -124,20 +132,22 @@
                 right: 24px;
                 display: flex;
                 align-items: center;
-                gap: 12px;
+                gap: 10px;
                 z-index: 100;
             }
 
             .control-btn {
-                width: 44px;
-                height: 44px;
-                border-radius: 50%;
+                height: 42px;
+                min-width: 42px;
+                padding: 0 12px;
+                border-radius: 21px;
                 background: var(--glass-bg);
                 backdrop-filter: blur(16px);
                 -webkit-backdrop-filter: blur(16px);
                 border: 1px solid var(--glass-border);
                 color: var(--text-main);
-                font-size: 1.1rem;
+                font-size: 0.95rem;
+                font-weight: 600;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -146,8 +156,14 @@
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }
 
+            .control-btn.btn-round {
+                width: 42px;
+                padding: 0;
+                border-radius: 50%;
+            }
+
             .control-btn:hover {
-                transform: scale(1.1) translateY(-2px);
+                transform: scale(1.08) translateY(-2px);
                 border-color: var(--glass-shine);
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
             }
@@ -189,7 +205,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                padding: 4rem 1.5rem 2.5rem;
+                padding: 4.5rem 1.5rem 2.5rem;
                 max-width: 480px;
                 margin: 0 auto;
             }
@@ -237,12 +253,6 @@
                 position: relative;
             }
 
-            .avatar-circle img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
             .avatar-circle canvas {
                 width: 100%;
                 height: 100%;
@@ -252,14 +262,14 @@
             .status-badge {
                 display: inline-flex;
                 align-items: center;
-                gap: 6px;
-                padding: 4px 12px;
+                gap: 7px;
+                padding: 5px 14px;
                 border-radius: 20px;
                 background: var(--glass-bg);
                 backdrop-filter: blur(10px);
                 border: 1px solid var(--glass-border);
-                font-size: 0.78rem;
-                font-weight: 500;
+                font-size: 0.8rem;
+                font-weight: 600;
                 color: var(--text-main);
                 margin-bottom: 0.75rem;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -294,10 +304,10 @@
 
             /* Profile Info */
             .profile-name {
-                font-size: 1.85rem;
-                font-weight: 700;
+                font-size: 1.95rem;
+                font-weight: 800;
                 letter-spacing: -0.5px;
-                margin-bottom: 0.25rem;
+                margin-bottom: 0.35rem;
                 background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.75) 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -310,11 +320,11 @@
             }
 
             .profile-bio {
-                font-size: 0.95rem;
+                font-size: 0.96rem;
                 color: var(--text-muted);
                 font-weight: 400;
-                max-width: 320px;
-                line-height: 1.5;
+                max-width: 330px;
+                line-height: 1.6;
             }
 
             /* Links List */
@@ -375,9 +385,14 @@
                 justify-content: center;
                 background: rgba(255, 255, 255, 0.08);
                 border: 1px solid rgba(255, 255, 255, 0.12);
-                margin-right: 14px;
+                margin-left: 14px;
                 flex-shrink: 0;
                 transition: all 0.3s ease;
+            }
+
+            body.ltr-mode .card-icon {
+                margin-left: 0;
+                margin-right: 14px;
             }
 
             body.light-mode .card-icon {
@@ -400,18 +415,30 @@
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
+                text-align: right;
+            }
+
+            body.ltr-mode .card-content {
+                text-align: left;
             }
 
             .card-title {
-                font-size: 1rem;
-                font-weight: 600;
+                font-size: 1.05rem;
+                font-weight: 700;
                 letter-spacing: -0.2px;
             }
 
             .card-handle {
-                font-size: 0.8rem;
+                font-size: 0.82rem;
                 color: var(--text-muted);
                 font-weight: 400;
+                direction: ltr;
+                display: inline-block;
+                width: fit-content;
+            }
+
+            body.rtl-mode .card-handle {
+                text-align: right;
             }
 
             .card-arrow {
@@ -422,10 +449,18 @@
                 align-items: center;
             }
 
+            body:not(.ltr-mode) .card-arrow svg {
+                transform: scaleX(-1);
+            }
+
             .link-card:hover .card-arrow {
                 opacity: 1;
-                transform: translateX(4px);
+                transform: translateX(-4px);
                 color: var(--text-main);
+            }
+
+            body.ltr-mode .link-card:hover .card-arrow {
+                transform: translateX(4px);
             }
 
             /* Brand Colors Accent on Hover */
@@ -471,15 +506,17 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                padding: 8px 16px;
+                padding: 9px 18px;
                 border-radius: 30px;
                 background: var(--glass-bg);
                 backdrop-filter: blur(12px);
                 border: 1px solid var(--glass-border);
-                font-size: 0.82rem;
+                font-size: 0.85rem;
+                font-weight: 600;
                 color: var(--text-muted);
                 cursor: pointer;
                 transition: all 0.3s ease;
+                font-family: inherit;
             }
 
             .quick-action-pill:hover {
@@ -494,18 +531,19 @@
                 bottom: 30px;
                 left: 50%;
                 transform: translateX(-50%) translateY(100px);
-                padding: 10px 20px;
+                padding: 10px 22px;
                 border-radius: 30px;
-                background: rgba(15, 12, 41, 0.9);
+                background: rgba(15, 12, 41, 0.95);
                 backdrop-filter: blur(16px);
                 border: 1px solid var(--gold-color);
                 color: #fff;
-                font-size: 0.85rem;
-                font-weight: 500;
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                font-size: 0.88rem;
+                font-weight: 600;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
                 transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
                 z-index: 1000;
                 pointer-events: none;
+                font-family: inherit;
             }
 
             .toast.show {
@@ -516,9 +554,9 @@
             .footer {
                 margin-top: 2.5rem;
                 text-align: center;
-                font-size: 0.8rem;
+                font-size: 0.82rem;
                 color: var(--text-muted);
-                letter-spacing: 0.5px;
+                letter-spacing: 0.3px;
             }
 
             /* Animations */
@@ -550,12 +588,20 @@
 
         <!-- Controls Toolbar -->
         <div class="controls-bar">
-            <button class="control-btn toggle-music" id="musicBtn" title="Play Ambient Music" aria-label="Toggle Background Music">
+            <!-- Language Switcher Button -->
+            <button class="control-btn toggle-lang" id="langBtn" title="تغییر زبان / Switch Language" aria-label="Toggle Language">
+                <span id="langLabel">EN</span>
+            </button>
+
+            <!-- Audio Controller Button -->
+            <button class="control-btn btn-round toggle-music" id="musicBtn" title="پخش موسیقی آرامش‌بخش" aria-label="Toggle Background Music">
                 <div class="sound-wave">
                     <span></span><span></span><span></span><span></span>
                 </div>
             </button>
-            <button class="control-btn toggle-theme" id="themeBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Color Theme">
+
+            <!-- Theme Toggle Button -->
+            <button class="control-btn btn-round toggle-theme" id="themeBtn" title="تغییر تم روز / شب" aria-label="Toggle Color Theme">
                 ☀️
             </button>
         </div>
@@ -566,18 +612,18 @@
                 <div class="avatar-wrapper">
                     <div class="avatar-glow"></div>
                     <div class="avatar-circle">
-                        <!-- Canvas Lion & Sun (high-res) or Logo -->
+                        <!-- Canvas Lion & Sun (high-res) -->
                         <canvas id="lionSun" width="240" height="240"></canvas>
                     </div>
                 </div>
 
                 <div class="status-badge">
                     <span class="status-dot"></span>
-                    <span>Online & Available</span>
+                    <span id="statusText">آنلاین و در دسترس</span>
                 </div>
 
-                <h1 class="profile-name">Mwri</h1>
-                <p class="profile-bio">Welcome to my personal space & creative universe ✨</p>
+                <h1 class="profile-name" id="profileName">مَمَد مُوری</h1>
+                <p class="profile-bio" id="profileBio">به جهان و فضای شخصی من خوش آمدید ✨</p>
             </header>
 
             <!-- Social / Link Cards -->
@@ -590,7 +636,7 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Telegram</span>
+                        <span class="card-title" id="telegramTitle">تلگرام</span>
                         <span class="card-handle">@bxiqm</span>
                     </div>
                     <div class="card-arrow">
@@ -609,7 +655,7 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Instagram</span>
+                        <span class="card-title" id="instagramTitle">اینستاگرام</span>
                         <span class="card-handle">@mamad_mwri</span>
                     </div>
                     <div class="card-arrow">
@@ -628,7 +674,7 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">X (Twitter)</span>
+                        <span class="card-title" id="xTitle">ایکس (توییتر)</span>
                         <span class="card-handle">@mamad_mwri</span>
                     </div>
                     <div class="card-arrow">
@@ -647,8 +693,8 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Anonymous Chat</span>
-                        <span class="card-handle">Send a secret message</span>
+                        <span class="card-title" id="anonTitle">چت ناشناس</span>
+                        <span class="card-handle" id="anonHandle">ارسال پیام محرمانه و بدون نام</span>
                     </div>
                     <div class="card-arrow">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -660,29 +706,105 @@
             </section>
 
             <!-- Copy ID Pill -->
-            <button class="quick-action-pill" id="copyIdBtn" aria-label="Copy Telegram Handle">
-                <span>📋 Copy Telegram: <b>@bxiqm</b></span>
+            <button class="quick-action-pill" id="copyIdBtn" aria-label="کپی آیدی تلگرام">
+                <span id="copyBtnText">📋 کپی آیدی تلگرام: @bxiqm</span>
             </button>
 
             <!-- Footer -->
             <footer class="footer">
-                <p>© 2026 Mwri • Designed with elegance</p>
+                <p id="footerText">© ۲۰۲۶ مُوری • طراحی شده با ظرافت و زیبایی</p>
             </footer>
         </main>
 
         <!-- Toast Feedback -->
-        <div class="toast" id="toast">✨ Telegram ID copied to clipboard!</div>
+        <div class="toast" id="toast">✨ آیدی تلگرام با موفقیت کپی شد!</div>
 
         <!-- Particles JS Library -->
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
         <script>
+            // Translation Dictionary
+            const translations = {
+                fa: {
+                    dir: "rtl",
+                    lang: "fa",
+                    htmlClass: "rtl-mode",
+                    status: "آنلاین و در دسترس",
+                    name: "مَمَد مُوری",
+                    bio: "به جهان و فضای شخصی من خوش آمدید ✨",
+                    telegramTitle: "تلگرام",
+                    instagramTitle: "اینستاگرام",
+                    xTitle: "ایکس (توییتر)",
+                    anonTitle: "چت ناشناس",
+                    anonHandle: "ارسال پیام محرمانه و بدون نام",
+                    copyBtn: "📋 کپی آیدی تلگرام: @bxiqm",
+                    toast: "✨ آیدی تلگرام با موفقیت کپی شد!",
+                    footer: "© ۲۰۲۶ مُوری • طراحی شده با ظرافت و زیبایی",
+                    btnLabel: "EN"
+                },
+                en: {
+                    dir: "ltr",
+                    lang: "en",
+                    htmlClass: "ltr-mode",
+                    status: "Online & Available",
+                    name: "Mwri",
+                    bio: "Welcome to my personal space & creative universe ✨",
+                    telegramTitle: "Telegram",
+                    instagramTitle: "Instagram",
+                    xTitle: "X (Twitter)",
+                    anonTitle: "Anonymous Chat",
+                    anonHandle: "Send a secret message",
+                    copyBtn: "📋 Copy Telegram: @bxiqm",
+                    toast: "✨ Telegram ID copied to clipboard!",
+                    footer: "© 2026 Mwri • Designed with elegance",
+                    btnLabel: "FA"
+                }
+            };
+
+            let currentLang = localStorage.getItem("mwri_lang") || "fa";
+
+            function applyLanguage(lang) {
+                const t = translations[lang];
+                document.documentElement.lang = t.lang;
+                document.documentElement.dir = t.dir;
+
+                if (lang === "en") {
+                    document.body.classList.add("ltr-mode");
+                } else {
+                    document.body.classList.remove("ltr-mode");
+                }
+
+                document.getElementById("statusText").textContent = t.status;
+                document.getElementById("profileName").textContent = t.name;
+                document.getElementById("profileBio").textContent = t.bio;
+                document.getElementById("telegramTitle").textContent = t.telegramTitle;
+                document.getElementById("instagramTitle").textContent = t.instagramTitle;
+                document.getElementById("xTitle").textContent = t.xTitle;
+                document.getElementById("anonTitle").textContent = t.anonTitle;
+                document.getElementById("anonHandle").textContent = t.anonHandle;
+                document.getElementById("copyBtnText").textContent = t.copyBtn;
+                document.getElementById("toast").textContent = t.toast;
+                document.getElementById("footerText").textContent = t.footer;
+                document.getElementById("langLabel").textContent = t.btnLabel;
+
+                localStorage.setItem("mwri_lang", lang);
+            }
+
+            // Language Toggle Event
+            const langBtn = document.getElementById("langBtn");
+            langBtn.addEventListener("click", () => {
+                currentLang = currentLang === "fa" ? "en" : "fa";
+                applyLanguage(currentLang);
+            });
+
+            // Initial Language Load
+            applyLanguage(currentLang);
+
             // Retina Canvas Lion and Sun Drawing
             const canvas = document.getElementById("lionSun");
             const ctx = canvas.getContext("2d");
             const dpr = window.devicePixelRatio || 1;
             
-            // Set High-DPI resolution
             canvas.width = 120 * dpr;
             canvas.height = 120 * dpr;
             ctx.scale(dpr, dpr);
