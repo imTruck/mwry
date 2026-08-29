@@ -5,10 +5,10 @@
 **وب‌سایت تک‌صفحه‌ای شخصی و لینک در بیو با طراحی مدرن شیشه‌ای (Glassmorphism 2.0)**  
 **A modern, aesthetic Glassmorphism single-page link-in-bio website**
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
-[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://pages.github.com/)
+<br/>
+
+[![🌐 Live Demo](https://img.shields.io/badge/🌐_Live_Website-Visit_mwry-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://imtruck.github.io/mwry/)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-22C55E?style=for-the-badge&logo=githubpages&logoColor=white)](https://imtruck.github.io/mwry/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -28,13 +28,15 @@
 
 یک صفحه فرود شخصی فوق‌العاده شیک، تعاملی و سبک بر پایه استاندارد مدرن Glassmorphism 2.0 با قابلیت تغییر زبان، تم تاریک/روشن و پخش‌کننده موسیقی آرامش‌بخش.
 
+🔗 **آدرس وب‌سایت آنلاین:** [https://imtruck.github.io/mwry/](https://imtruck.github.io/mwry/)
+
 ### 🌟 ویژگی‌های برجسته:
 - 💎 **طراحی شیشه‌ای مدرن (Glassmorphism 2.0):** شیشه‌های مات کریستالی با لبه‌های درخشان و فیزیک حرکتی نرم هنگام Hover.
+- 🦁 **آواتار پرچم شیر و خورشید:** طراحی وکتور خالص SVG با سه رنگ سبز، سفید و قرمز همراه با نشان زرین شیر و خورشید.
 - 🌐 **پشتیبانی دو زبانه (فارسی و انگلیسی):** مجهز به دکمه تغییر زبان در بالای صفحه با چینش هوشمند راست‌چین و چپ‌چین (RTL / LTR).
 - ☀️ **تم روز و شب:** سوییچ روان بین تم دارک و لایت با ذخیره‌سازی خودکار در حافظه مرورگر (`localStorage`).
 - 🎵 **موسیقی پس‌زمینه با اکولایزر صوتی:** دارای پلیر صوتی Lo-Fi همراه با انیمیشن امواج صدا در هنگام پخش.
 - 🌌 **ذرات متحرک کیهانی:** پس‌زمینه تعاملی با ذرات ستاره‌ای و هاله‌های نوری شناور.
-- 🦁 **نقاشی رتینا Canvas:** طراحی اختصاصی نماد شیر و خورشید با مقیاس‌بندی شفاف برای نمایشگرهای 4K و رتینا.
 - 📋 **کپی سریع آیدی:** دکمه کپی فوری آیدی تلگرام به همراه اعلان Toast.
 - ⚡ **فوق‌سریع و بدون وابستگی:** کدنویسی خالص با JavaScript و آیکون‌های وکتور SVG بدون نیاز به لود کتابخانه‌های سنگین.
 
@@ -55,13 +57,15 @@
 
 A modern, aesthetic Glassmorphism single-page link-in-bio landing page with interactive particle cosmos, theme switcher, ambient audio visualizer, and bilingual support.
 
+🔗 **Live Website URL:** [https://imtruck.github.io/mwry/](https://imtruck.github.io/mwry/)
+
 ### 🌟 Key Features:
 - 💎 **Glassmorphism 2.0:** Ultra-crisp frosted glass design with specular edge highlights and smooth spring-like hover transforms.
+- 🦁 **Lion & Sun Flag Avatar:** Pure vector SVG artwork featuring the tricolor flag and golden Lion & Sun emblem.
 - 🌐 **Bilingual Support (Persian & English):** Instant language toggle at the top with dynamic RTL/LTR typography.
 - ☀️ **Theme Switcher:** Seamless light and dark mode transition with `localStorage` preference memory.
 - 🌌 **Cosmic Particles & Ambient Glow:** Interactive particle canvas and fluid floating aura blobs.
 - 🎵 **Ambient Lo-Fi Music:** Built-in background audio player with live soundwave visualizer.
-- 🦁 **Retina Canvas Art:** High-DPI Canvas illustration with smooth floating animation for 4K displays.
 - 📋 **Quick Copy Action:** 1-click Telegram ID copy button with toast notification.
 - ⚡ **Zero Heavy Dependencies:** Pure vanilla JavaScript & inline SVG icons for $<50\text{ms}$ loading speed.
 
