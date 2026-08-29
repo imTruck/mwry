@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Mwri | مَمَد مُوری
+# ✨ Mwri | مُوری
 
 **وب‌سایت تک‌صفحه‌ای شخصی و لینک در بیو با طراحی مدرن شیشه‌ای (Glassmorphism 2.0)**  
 **A modern, aesthetic Glassmorphism single-page link-in-bio website**
