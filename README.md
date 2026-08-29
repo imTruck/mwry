@@ -1,42 +1,76 @@
 <div align="center">
 
-# ✨ Mwri | Personal Profile & Link-in-Bio
+# ✨ Mwri | مَمَد مُوری
 
-**A modern, aesthetic Glassmorphism single-page link-in-bio website with interactive particle cosmos, theme switcher, and ambient audio.**
+**وب‌سایت تک‌صفحه‌ای شخصی و لینک در بیو با طراحی مدرن شیشه‌ای (Glassmorphism 2.0)**  
+**A modern, aesthetic Glassmorphism single-page link-in-bio website**
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 <br/>
+
+<!-- Language Switcher Bar -->
+<p align="center">
+  <b>🌐 انتخاب زبان / Select Language:</b><br/>
+  <a href="#-فارسی"><b>🇮🇷 فارسی (Persian)</b></a> • <a href="#-english"><b>🇬🇧 English (انگلیسی)</b></a>
+</p>
 
 </div>
 
 ---
 
-## 🌟 Highlights & Features
+<a name="-فارسی"></a>
+## 🇮🇷 نسخه فارسی
 
-- 💎 **Glassmorphism 2.0:** Ultra-crisp frosted glass design with specular edge highlights and smooth spring-like hover transforms.
-- ☀️ **Theme Switcher:** Seamless light and dark mode transition with `localStorage` preference memory.
-- 🌌 **Cosmic Particles & Ambient Glow:** Interactive particle canvas and fluid floating aura blobs.
-- 🎵 **Ambient Lo-Fi Music:** Built-in background audio player with live soundwave visualization.
-- 🦁 **Retina Canvas Art:** High-DPI Canvas illustration with smooth floating animation.
-- 📱 **100% Mobile Responsive:** Optimized for all screen sizes from smartphones to 4K monitors.
-- ⚡ **Zero External Heavy Dependencies:** Pure vanilla JavaScript & SVG icons for $<50\text{ms}$ loading speed.
+یک صفحه فرود شخصی فوق‌العاده شیک، تعاملی و سبک بر پایه استاندارد مدرن Glassmorphism 2.0 با قابلیت تغییر زبان، تم تاریک/روشن و پخش‌کننده موسیقی آرامش‌بخش.
+
+### 🌟 ویژگی‌های برجسته:
+- 💎 **طراحی شیشه‌ای مدرن (Glassmorphism 2.0):** شیشه‌های مات کریستالی با لبه‌های درخشان و فیزیک حرکتی نرم هنگام Hover.
+- 🌐 **پشتیبانی دو زبانه (فارسی و انگلیسی):** مجهز به دکمه تغییر زبان در بالای صفحه با چینش هوشمند راست‌چین و چپ‌چین (RTL / LTR).
+- ☀️ **تم روز و شب:** سوییچ روان بین تم دارک و لایت با ذخیره‌سازی خودکار در حافظه مرورگر (`localStorage`).
+- 🎵 **موسیقی پس‌زمینه با اکولایزر صوتی:** دارای پلیر صوتی Lo-Fi همراه با انیمیشن امواج صدا در هنگام پخش.
+- 🌌 **ذرات متحرک کیهانی:** پس‌زمینه تعاملی با ذرات ستاره‌ای و هاله‌های نوری شناور.
+- 🦁 **نقاشی رتینا Canvas:** طراحی اختصاصی نماد شیر و خورشید با مقیاس‌بندی شفاف برای نمایشگرهای 4K و رتینا.
+- 📋 **کپی سریع آیدی:** دکمه کپی فوری آیدی تلگرام به همراه اعلان Toast.
+- ⚡ **فوق‌سریع و بدون وابستگی:** کدنویسی خالص با JavaScript و آیکون‌های وکتور SVG بدون نیاز به لود کتابخانه‌های سنگین.
+
+### 🚀 راهنمای سریع راه‌اندازی در GitHub Pages:
+1. در مخزن گیت‌هاب خود به بخش **Settings $\rightarrow$ Pages** بروید.
+2. در بخش **Build and deployment $\rightarrow$ Branch**، شاخه `main` و ریشه `/ (root)` را انتخاب کنید.
+3. دکمه **Save** را بزنید. صفحه شما بلافاصله در آدرس `https://imtruck.github.io/mwry/` فعال می‌شود!
+
+### 👤 راه‌های ارتباطی:
+- **تلگرام:** [@bxiqm](https://t.me/bxiqm)
+- **اینستاگرام:** [@mamad_mwri](https://instagram.com/mamad_mwri)
+- **ایکس (توییتر):** [@mamad_mwri](https://twitter.com/mamad_mwri)
 
 ---
 
-## 🚀 Quick Deployment (GitHub Pages)
+<a name="-english"></a>
+## 🇬🇧 English Version
 
-1. Go to your repository settings on GitHub (**Settings $\rightarrow$ Pages**).
+A modern, aesthetic Glassmorphism single-page link-in-bio landing page with interactive particle cosmos, theme switcher, ambient audio visualizer, and bilingual support.
+
+### 🌟 Key Features:
+- 💎 **Glassmorphism 2.0:** Ultra-crisp frosted glass design with specular edge highlights and smooth spring-like hover transforms.
+- 🌐 **Bilingual Support (Persian & English):** Instant language toggle at the top with dynamic RTL/LTR typography.
+- ☀️ **Theme Switcher:** Seamless light and dark mode transition with `localStorage` preference memory.
+- 🌌 **Cosmic Particles & Ambient Glow:** Interactive particle canvas and fluid floating aura blobs.
+- 🎵 **Ambient Lo-Fi Music:** Built-in background audio player with live soundwave visualizer.
+- 🦁 **Retina Canvas Art:** High-DPI Canvas illustration with smooth floating animation for 4K displays.
+- 📋 **Quick Copy Action:** 1-click Telegram ID copy button with toast notification.
+- ⚡ **Zero Heavy Dependencies:** Pure vanilla JavaScript & inline SVG icons for $<50\text{ms}$ loading speed.
+
+### 🚀 Quick Deployment (GitHub Pages):
+1. Go to repository settings on GitHub (**Settings $\rightarrow$ Pages**).
 2. Under **Build and deployment $\rightarrow$ Branch**, select `main` and `/ (root)`.
 3. Click **Save**. Your profile will be live at `https://imtruck.github.io/mwry/`!
 
----
-
-## 👤 Connect
-
+### 👤 Connect:
 - **Telegram:** [@bxiqm](https://t.me/bxiqm)
 - **Instagram:** [@mamad_mwri](https://instagram.com/mamad_mwri)
 - **X (Twitter):** [@mamad_mwri](https://twitter.com/mamad_mwri)
